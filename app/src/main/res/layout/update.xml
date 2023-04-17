@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter the details below"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"/>
+    <Spinner
+        android:id="@+id/team_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Team Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle" />
+    <EditText
+        android:id="@+id/goals_scored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Goals Scored"
+        android:textSize="24dp"
+        android:layout_below="@+id/team_name"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/goals_conceeded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Goals Conceeded"
+        android:textSize="24dp"
+        android:layout_below="@+id/goals_scored"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Update Data"
+        android:layout_below="@+id/goals_conceeded"/>
+
+</RelativeLayout>
